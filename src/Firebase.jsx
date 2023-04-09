@@ -25,5 +25,5 @@ export const signInWithGoogle = () =>{
          localStorage.setItem("name" , name);
          localStorage.setItem("email" , email);
          localStorage.setItem("profilepic" , profilepic);
-  })
+  }).then(() => window.location.reload(false));
 }
